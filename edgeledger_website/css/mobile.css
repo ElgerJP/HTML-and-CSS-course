@@ -1,71 +1,66 @@
-#what .items{
-    display: block;
-    padding: 1rem;
+#what .items {
+  display: block;
+  padding: 1rem;
 }
 
-#what .items .item{
-    display: flex;
-    text-align: left;
+#what .items .item {
+  display: flex;
+  text-align: left;
 }
 
-#what .items .item i{
-    margin-right: 1.3rem;
-    align-self: center;
-    margin-bottom: 0;
+#what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
 }
 
-#contact .map{
-    flex: 2;
-
+#contact .map {
+  flex: 2;
 }
-
 
 /* Smartphones */
 
-@media(max-width: 500px){
-    #navbar{
-        flex-direction: column;
-        align-items: center;
-    }
+@media (max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #navbar .logo{
-        margin-bottom: 0.5rem;
-        text-align: center;
+  #navbar .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
 
-    }
+  #navbar ul {
+    padding: 0.5rem;
+  }
 
-    #navbar ul{
-        padding: 0.5rem;
-    }
+  #showcase .showcase-content {
+    top: 112px;
+  }
 
-    #showcase .showcase-content{
-        top: 112px;
+  #who {
+    display: block;
+  }
 
-    }
+  #who .who-img {
+    display: none;
+  }
 
-    #who{
-        display: block;
-    }
+  #clients .items img {
+    width: 80%;
+  }
 
-    #who .who-img{
-        display: none;
-    }
+  #clients .items div:last-child {
+    display: none;
+  }
 
-    #clients .items img{
-        width: 80%;
-    }
+  #contact {
+    flex-direction: column;
+  }
 
-    #clients .items div:last-child{
-        display: none;
-    }
-
-    #contact{
-        flex-direction: column;
-    }
-
-    #contact .map{
-        height: 15rem;
-        border-top: 4px solid #333;
-    }
-
+  #contact .map {
+    height: 15rem;
+    border-top: 4px solid #333;
+  }
 }

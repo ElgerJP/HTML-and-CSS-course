@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flex Align</title>
-    <style>
-      #container {
-        background: #555;
-        display: flex;
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Flex Align</title>
+		<style>
+			#container {
+				background: #555;
+				display: flex;
 
-        /* Align Items Horizontal */
-        justify-content: space-evenly;
-        /* 
+				/* Align Items Horizontal */
+				justify-content: space-evenly;
+				/* 
                 OPTIONS:
                 flex-start
                 flex-end
@@ -19,25 +19,25 @@
                 space-between
                 space-around
                 space-evenly
-             */
+        */
 
-        height: 600px;
-        /* Align Items Vertical (Must be a height) */
-        align-items: flex-start;
-        /* 
+				height: 600px;
+				/* Align Items Vertical (Must be a height) */
+				align-items: flex-start;
+				/* 
                 OPTIONS:
                 flex-start
                 flex-end
                 center
                 baseline
                 stretch          
-             */
+        */
 
-        /* flex-wrap: wrap; */
+				/* flex-wrap: wrap; */
 
-        /* Align Items Vetical where there is extra space */
-        align-content: flex-start;
-        /* 
+				/* Align Items Vetical where there is extra space */
+				align-content: flex-start;
+				/* 
             
                 OPTIONS:
                 flex-start
@@ -46,38 +46,38 @@
                 space-between
                 space-around
                 stretch
-             */
-      }
+        */
+			}
 
-      .item-1 {
-        order: 3;
-      }
+			.item-1 {
+				order: 3;
+			}
 
-      .item-2 {
-        /* Align single item vertical */
-        align-self: center;
-        order: 2;
-      }
+			.item-2 {
+				/* Align single item vertical */
+				align-self: center;
+				order: 2;
+			}
 
-      .item-3 {
-        order: 1;
-      }
+			.item-3 {
+				order: 1;
+			}
 
-      .item {
-        background: #f4f4f4;
-        border: #ccc solid 1px;
-        padding: 1rem;
-        text-align: center;
-        margin: 0.5rem;
-        flex-basis: 200px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="container">
-      <div class="item item-1"><h3>Item 1</h3></div>
-      <div class="item item-2"><h3>Item 2</h3></div>
-      <div class="item item-3"><h3>Item 3</h3></div>
-    </div>
-  </body>
+			.item {
+				background: #f4f4f4;
+				border: #ccc solid 1px;
+				padding: 1rem;
+				text-align: center;
+				margin: 0.5rem;
+				flex-basis: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="item item-1"><h3>Item 1</h3></div>
+			<div class="item item-2"><h3>Item 2</h3></div>
+			<div class="item item-3"><h3>Item 3</h3></div>
+		</div>
+	</body>
 </html>

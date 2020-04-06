@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basics</title>
+    <style>
+        #container{
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            
+            flex-flow: row wrap;
+            
+            /* Same thing ^^ */
+        }
+
+        .item{
+            background: #f4f4f4;
+            border: #ccc solid 1px;
+            padding: 1rem;
+            text-align: center;
+            flex: 1;
+            margin: 0.7rem;
+        }
+
+        .item:first-child{
+            flex: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item"><h3>Item 1</h3></div>
+        <div class="item"><h3>Item 2</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+
+        <!-- Use flex-wrap: wrap when you have 12 more items and want them to create a new line to fix the screen -->
+
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+        <div class="item"><h3>Item 3</h3></div>
+
+    </div>    
+    
+</body>
+</html>

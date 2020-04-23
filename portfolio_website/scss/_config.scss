@@ -1,0 +1,23 @@
+//Variables
+
+$website-width: 1280px;
+$main-font: "Dosis", sans-serif;
+
+$current-color: rgb(158, 42, 59);
+$current-color: rgb(218, 96, 63);
+$main-color: rgb(42, 0, 46);
+// $main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+
+$bg-img: url("../img/showcase.jpg");
+
+// Set Text Color
+@function set-text-color($color) {
+	@if (lightness($color) > 50) {
+		@return #000;
+	} @else {
+		@return #fff;
+	}
+}
